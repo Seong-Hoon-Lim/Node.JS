@@ -1,0 +1,26 @@
+### GET 요청 보내기
+GET http://localhost:3000/person
+
+### POST 요청 보내기
+POST http://localhost:3000/person
+Content-Type: application/json
+
+{
+  "name": "Node JS",
+  "age": 30,
+  "email": "node@test.com"
+}
+
+### 생성한 문서 확인
+GET http://localhost:3000/person/node@test.com
+
+### PUT 요청 보내기, 문서 수정하기
+PUT http://localhost:3000/person/node@test.com
+Content-Type: application/json
+
+{
+  "age": 32
+}
+
+### 문서 삭제하기
+DELETE http://localhost:3000/person/node@test.com
